@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener {
             if (editLogin.text.toString().equals("Customer") && editPassword.text.toString().equals("password")){
-                Toast.makeText(this, "Welcome!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Welcome!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, ShopListActivity::class.java)
                 startActivity(intent)
 
-            } else Toast.makeText(this, "Try again!", Toast.LENGTH_LONG).show()
+            } else Toast.makeText(this, "Try again!", Toast.LENGTH_SHORT).show()
         }
 
         btnRegister.setOnClickListener {
