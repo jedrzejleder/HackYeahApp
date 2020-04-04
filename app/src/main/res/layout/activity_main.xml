@@ -91,4 +91,12 @@
         tools:layout_editor_absoluteX="149dp"
         tools:layout_editor_absoluteY="142dp" />
 
+    <Button
+        android:id="@+id/buttonTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

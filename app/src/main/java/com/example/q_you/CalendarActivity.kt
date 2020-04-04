@@ -1,5 +1,6 @@
 package com.example.q_you
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -36,7 +37,7 @@ class CalendarActivity : AppCompatActivity() {
                 daycorrect = "0" + dayOfMonth.toString()
             }
             date = daycorrect+ "-" + monthString + "-"+ year
-            dateView.setText("Wybrana data i godzina: " + date + " ")
+            //dateView.setText("Wybrana data i godzina: " + date + " ")
             readJson(date)
             sp = timeSpinner
             val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, times)
@@ -47,14 +48,15 @@ class CalendarActivity : AppCompatActivity() {
                 }
 
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                    timeView.setText(sp.selectedItem.toString())
+                    //timeView.setText(sp.selectedItem.toString())
                 }
 
             }
         }
 
         confirmBtn.setOnClickListener {
-            Toast.makeText(this, date, Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, TransactionActivity::class.java)
+            startActivity(intent)
         }
 
     }
@@ -79,3 +81,24 @@ class CalendarActivity : AppCompatActivity() {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
