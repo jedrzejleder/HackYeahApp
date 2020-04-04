@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         buttonTicket.setOnClickListener {
-            val intent = Intent(this, TicketActivity::class.java)
+            val intent = Intent(this, TicketListActivity::class.java)
             startActivity(intent)
         }
     }

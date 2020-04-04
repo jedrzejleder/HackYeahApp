@@ -4,5 +4,17 @@
       "shop": "Biedra",
       "time": "4:20 PM",
       "code": 696969
+    },
+    {
+      "day": "Tuesday",
+      "shop": "Lidl",
+      "time": "4:20 PM",
+      "code": 31337
+    },
+    {
+      "day": "Wednesday",
+      "shop": "Intermarszcze",
+      "time": "4:20 PM",
+      "code": 42342
     }
 ]

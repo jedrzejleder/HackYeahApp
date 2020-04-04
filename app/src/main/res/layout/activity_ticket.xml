@@ -10,7 +10,7 @@
         android:id="@+id/textVievTitle"
         android:layout_width="120dp"
         android:layout_height="38dp"
-        android:text="My tickets"
+        android:text="My ticket"
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,23 +130,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewImportedTR" />
 
-    <Button
-        android:id="@+id/buttonKlepnijTicket"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Klepnij ticket!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCode" />
-
     <TextView
         android:id="@+id/json_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonKlepnijTicket" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
