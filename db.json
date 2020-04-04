@@ -1,0 +1,12 @@
+{
+	users:[
+		{
+			"login": "Customer",
+			"password": "password"
+		},
+		{
+			"login": "Owner",
+			"password": "password"
+		}
+	]
+}
