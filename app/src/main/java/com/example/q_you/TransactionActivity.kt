@@ -16,7 +16,7 @@ class TransactionActivity : AppCompatActivity() {
                 Toast.makeText(this, "Something went wrong!", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "Done", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, CalendarActivity::class.java)
+                val intent = Intent(this, TicketListActivity::class.java)
                 startActivity(intent)
             }
         }
