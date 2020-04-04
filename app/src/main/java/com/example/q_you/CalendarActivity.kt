@@ -1,5 +1,6 @@
 package com.example.q_you
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -54,7 +55,8 @@ class CalendarActivity : AppCompatActivity() {
         }
 
         confirmBtn.setOnClickListener {
-            Toast.makeText(this, date, Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, TransactionActivity::class.java)
+            startActivity(intent)
         }
 
     }
