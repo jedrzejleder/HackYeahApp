@@ -31,6 +31,8 @@ class TicketActivity : AppCompatActivity() {
            json = inputStream.bufferedReader().use { it.readText() }
 
            var jsonArr = JSONArray(json)
+           val bundle: Bundle? = intent.extras
+           val index  = bundle!!.getInt("listIndex")
 
             for(i in 0..jsonArr.length()-1)
             {
@@ -41,10 +43,25 @@ class TicketActivity : AppCompatActivity() {
                 arr.add(jsonObj.getString("code"))
             }
 
-           textViewImportedDay.text = arr[0]
-           textViewImportedSN.text = arr[1]
-           textViewImportedTR.text = arr[2]
-           textViewImportedCode.text = arr[3]
+           if (index == 0){
+               textViewImportedDay.text = arr[0]
+               textViewImportedSN.text = arr[1]
+               textViewImportedTR.text = arr[2]
+               textViewImportedCode.text = arr[3]
+           }
+           else if (index == 1){
+               textViewImportedDay.text = arr[4]
+               textViewImportedSN.text = arr[5]
+               textViewImportedTR.text = arr[6]
+               textViewImportedCode.text = arr[7]
+           }
+           else if (index == 2){
+               textViewImportedDay.text = arr[8]
+               textViewImportedSN.text = arr[9]
+               textViewImportedTR.text = arr[10]
+               textViewImportedCode.text = arr[11]
+           }
+
        }
        catch (e: IOException)
        {

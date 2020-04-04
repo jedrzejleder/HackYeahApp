@@ -14,7 +14,6 @@ import java.io.InputStream
 class TicketListActivity : AppCompatActivity() {
 
     var arr = arrayListOf<String>()
-    var day = arrayListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,14 +35,17 @@ class TicketListActivity : AppCompatActivity() {
                 var jsonObj = jsonArr.getJSONObject(i)
 
                 arr.add(jsonObj.getString("shop"))
-                day.add(jsonObj.getString("day"))
             }
 
             var adpt = ArrayAdapter(this, android.R.layout.simple_list_item_1, arr)
+
             json_list.adapter = adpt
 
             json_list.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+
+                val index = position
                 val intent = Intent(this, TicketActivity::class.java)
+                intent.putExtra("listIndex", index)
                 startActivity(intent)
             }
 
