@@ -20,6 +20,7 @@ class CalendarActivity : AppCompatActivity() {
 
     private lateinit var sp: Spinner
     private lateinit var date: String
+    private var time: String? = null
     private var times: ArrayList<String> = ArrayList()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +38,6 @@ class CalendarActivity : AppCompatActivity() {
                 daycorrect = "0" + dayOfMonth.toString()
             }
             date = daycorrect+ "-" + monthString + "-"+ year
-            //dateView.setText("Wybrana data i godzina: " + date + " ")
             readJson(date)
             sp = timeSpinner
             val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, times)
@@ -48,15 +48,20 @@ class CalendarActivity : AppCompatActivity() {
                 }
 
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                    //timeView.setText(sp.selectedItem.toString())
+                    time = sp.selectedItem.toString()
                 }
 
             }
         }
 
         confirmBtn.setOnClickListener {
-            val intent = Intent(this, TransactionActivity::class.java)
-            startActivity(intent)
+            if(!time.isNullOrEmpty()){
+                date = date + " " + time
+                Toast.makeText(applicationContext ,date, Toast.LENGTH_LONG).show()
+                val intent = Intent(this, TransactionActivity::class.java)
+                startActivity(intent)
+            }
+
         }
 
     }
