@@ -4,41 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShopListActivity">
+    tools:context=".ShopListActivity"
+    android:background="@drawable/background">
 
     <ListView
         android:id="@+id/json_list"
-        android:layout_width="301dp"
+        android:layout_width="318dp"
         android:layout_height="328dp"
+        android:background="@drawable/avaiableshopbackground"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.632"
+        app:layout_constraintVertical_bias="0.744"
         tools:ignore="MissingConstraints">
 
     </ListView>
 
     <Button
         android:id="@+id/findshopbtn"
-        android:layout_width="145dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="60dp"
-        android:text="Find Shop"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/findshopbutton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/displaytext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My shops"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:background="@drawable/myshopbutton"
         app:layout_constraintBottom_toTopOf="@+id/json_list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/findshopbtn"
         app:layout_constraintVertical_bias="0.627" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="225dp"
+        android:layout_height="44dp"
+        android:background="@drawable/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/json_list"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toTopOf="@+id/findshopbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnTickets"
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:background="@drawable/mytickets"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

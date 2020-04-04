@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_ticket.*
 import kotlinx.android.synthetic.main.activity_ticket_list.*
 import org.json.JSONArray
@@ -20,6 +21,12 @@ class TicketListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_ticket_list)
 
         read_json()
+
+        btnhome.setOnClickListener {
+            val intent = Intent(this, ShopListActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     fun read_json() {

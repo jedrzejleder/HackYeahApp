@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TicketListActivity">
+    tools:context=".TicketListActivity"
+    android:background="@drawable/background">
 
     <ListView
         android:id="@+id/json_list"
         android:layout_width="411dp"
-        android:layout_height="675dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="601dp"
+        android:background="@drawable/avaiableshopbackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,4 +22,26 @@
 
     </ListView>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btnhome"
+        android:layout_width="39dp"
+        android:layout_height="53dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/json_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/json_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mytickets" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

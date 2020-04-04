@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FindShopActivity">
+    tools:context=".FindShopActivity"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/displaytext2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Available shops in your area:"
+        android:textColor="#FFA942"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/json_list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.178"
@@ -22,13 +25,14 @@
         android:id="@+id/json_list"
         android:layout_width="301dp"
         android:layout_height="328dp"
+        android:background="@drawable/avaiableshopbackground"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.632"
+        app:layout_constraintTop_toBottomOf="@+id/displaytext"
         tools:ignore="MissingConstraints">
+
 
     </ListView>
 
@@ -36,12 +40,29 @@
         android:id="@+id/displaytext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select shop"
-        app:layout_constraintBottom_toTopOf="@+id/json_list"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selectshopbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="117dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnhome"
+        android:layout_width="39dp"
+        android:layout_height="53dp"
+        android:background="@drawable/home"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="32dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

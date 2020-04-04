@@ -16,7 +16,7 @@ class TicketActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ticket)
         buttonHome.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ShopListActivity::class.java)
             startActivity(intent)
         }
         read_json()

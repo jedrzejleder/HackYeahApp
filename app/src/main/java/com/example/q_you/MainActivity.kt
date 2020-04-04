@@ -39,18 +39,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
             }
-        button2.setOnClickListener {
-            val intent = Intent(this, ShopListActivity::class.java)
-            startActivity(intent)
-        }
-        button.setOnClickListener {
-            val intent = Intent(this, CalendarActivity::class.java)
-            startActivity(intent)
-        }
-        buttonTicket.setOnClickListener {
-            val intent = Intent(this, TicketListActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
 

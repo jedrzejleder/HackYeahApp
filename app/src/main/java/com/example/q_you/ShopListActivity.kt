@@ -34,6 +34,16 @@ class ShopListActivity : AppCompatActivity() {
             startActivity(intent)
             av.clear()
         }
+        btnLogout.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnTickets.setOnClickListener {
+            val intent = Intent(this, TicketListActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     fun read_json() {
