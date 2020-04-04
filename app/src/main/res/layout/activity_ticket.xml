@@ -6,4 +6,138 @@
     android:layout_height="match_parent"
     tools:context=".TicketActivity">
 
+    <TextView
+        android:id="@+id/textVievTitle"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:text="My tickets"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="home"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textVievTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/textViewDay"
+        android:layout_width="41dp"
+        android:layout_height="30dp"
+        android:text="Day: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVievTitle"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/textViewShopName"
+        android:layout_width="102dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Shop name: "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDay" />
+
+    <TextView
+        android:id="@+id/textViewTimeRange"
+        android:layout_width="99dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Time range:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewShopName" />
+
+    <TextView
+        android:id="@+id/textViewCode"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Code:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeRange" />
+
+    <TextView
+        android:id="@+id/textViewImportedDay"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text=" "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVievTitle"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/textViewImportedSN"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text=" "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewImportedDay" />
+
+    <TextView
+        android:id="@+id/textViewImportedTR"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text=" "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewImportedSN" />
+
+    <TextView
+        android:id="@+id/textViewImportedCode"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text=" "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewImportedTR" />
+
+    <Button
+        android:id="@+id/buttonKlepnijTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klepnij ticket!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCode" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
