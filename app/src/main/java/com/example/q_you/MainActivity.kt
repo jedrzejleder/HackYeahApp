@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CalendarActivity::class.java)
             startActivity(intent)
         }
+        buttonTicket.setOnClickListener {
+            val intent = Intent(this, TicketActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
 
