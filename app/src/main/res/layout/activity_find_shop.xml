@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShopListActivity">
+    tools:context=".FindShopActivity">
+
+    <TextView
+        android:id="@+id/displaytext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Available shops in your area:"
+        app:layout_constraintBottom_toTopOf="@+id/json_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
 
     <ListView
         android:id="@+id/json_list"
@@ -20,25 +32,16 @@
 
     </ListView>
 
-    <Button
-        android:id="@+id/findshopbtn"
-        android:layout_width="145dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="60dp"
-        android:text="Find Shop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/displaytext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My shops"
+        android:text="Select shop"
         app:layout_constraintBottom_toTopOf="@+id/json_list"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/findshopbtn"
-        app:layout_constraintVertical_bias="0.627" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
