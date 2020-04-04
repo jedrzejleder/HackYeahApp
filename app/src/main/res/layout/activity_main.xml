@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
         android:text="Login"
+        android:textColor="#FFA942"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="Password"
+        android:textColor="#FFA942"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.284"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,27 +47,28 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
+        android:background="@drawable/passwordarea"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="148dp"
-        android:layout_height="74dp"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="55dp"
-        android:text="Login"
+        android:background="@drawable/signinbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="148dp"
-        android:layout_height="74dp"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="55dp"
-        android:text="REGISTER"
+        android:background="@drawable/registerbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -74,6 +78,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        android:background="@drawable/loginarea"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
