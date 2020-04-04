@@ -9,16 +9,16 @@
 
     <ListView
         android:id="@+id/json_list"
-        android:layout_width="318dp"
-        android:layout_height="328dp"
+        android:layout_width="319dp"
+        android:layout_height="303dp"
         android:background="@drawable/avaiableshopbackground"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.744"
+        app:layout_constraintTop_toBottomOf="@+id/displaytext"
+        app:layout_constraintVertical_bias="0.182"
         tools:ignore="MissingConstraints">
 
     </ListView>
@@ -27,7 +27,7 @@
         android:id="@+id/findshopbtn"
         android:layout_width="318dp"
         android:layout_height="58dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="140dp"
         android:background="@drawable/findshopbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
@@ -38,12 +38,12 @@
         android:id="@+id/displaytext"
         android:layout_width="318dp"
         android:layout_height="58dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/myshopbutton"
-        app:layout_constraintBottom_toTopOf="@+id/json_list"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/findshopbtn"
-        app:layout_constraintVertical_bias="0.627" />
+        app:layout_constraintTop_toBottomOf="@+id/findshopbtn" />
 
     <Button
         android:id="@+id/btnLogout"
@@ -52,10 +52,9 @@
         android:background="@drawable/logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/json_list"
-        app:layout_constraintVertical_bias="0.84" />
+        app:layout_constraintVertical_bias="0.792" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -63,8 +62,10 @@
         android:layout_height="114dp"
         app:layout_constraintBottom_toTopOf="@+id/findshopbtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
 
     <Button

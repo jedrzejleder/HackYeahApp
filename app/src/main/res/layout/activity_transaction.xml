@@ -23,10 +23,12 @@
         android:id="@+id/editCardNo"
         android:layout_width="307dp"
         android:layout_height="58dp"
+        android:autoText="false"
         android:background="@drawable/card_number"
         android:ems="10"
         android:hint="0000 1111 2222 3333"
         android:inputType="numberDecimal"
+        android:maxLength="16"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,6 +122,18 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+        app:layout_constraintVertical_bias="0.761" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket payment"
+        android:textColor="#FFA942"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
