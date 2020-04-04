@@ -30,7 +30,7 @@ class MapsAdapter(val context: Context, val favShops: List<FavShops>,val onClick
             onClickListener.onItemClick(position)
         }
         val textViewTitle = holder.itemView.findViewById<TextView>(android.R.id.text1)
-        textViewTitle.text="Supermarkets"
+        textViewTitle.text=favShop.title
     }
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 }
